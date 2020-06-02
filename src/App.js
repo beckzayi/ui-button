@@ -1,10 +1,12 @@
 import React from 'react';
-import { Button } from './components/Buttons';
+import { PrimaryButton, SecondaryButton, TertiaryButton } from './components/Buttons';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Button>Button</Button>
+      <PrimaryButton>Primary Button</PrimaryButton>
+      <SecondaryButton>Secondary</SecondaryButton>
+      <TertiaryButton>Tertiary</TertiaryButton>
     </div>
   );
 }
