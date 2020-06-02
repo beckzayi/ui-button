@@ -5,9 +5,15 @@ import { GlobalStyle } from './utils';
 const App = () => {
   return (
     <div className="App">
-      <PrimaryButton>Primary Button</PrimaryButton>
-      <SecondaryButton>Secondary</SecondaryButton>
-      <TertiaryButton>Tertiary</TertiaryButton>
+      <div>
+        <PrimaryButton>Primary Button</PrimaryButton>
+        <SecondaryButton>Secondary</SecondaryButton>
+        <TertiaryButton>Tertiary</TertiaryButton>
+      </div>
+      <div>
+        <PrimaryButton disabled>Primary Disabled</PrimaryButton>
+        <SecondaryButton disabled>Secondary Disabled</SecondaryButton>
+      </div>
       <GlobalStyle />
     </div>
   );
