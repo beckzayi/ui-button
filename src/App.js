@@ -7,11 +7,11 @@ const App = () => {
     <div className="App">
       <div>
         <PrimaryButton>Primary Button</PrimaryButton>
-        <SecondaryButton>Secondary</SecondaryButton>
+        <SecondaryButton modifiers="small">Secondary</SecondaryButton>
         <TertiaryButton>Tertiary</TertiaryButton>
       </div>
       <div>
-        <PrimaryButton disabled>Primary Disabled</PrimaryButton>
+        <PrimaryButton modifiers={["large"]} disabled>Primary Disabled</PrimaryButton>
         <SecondaryButton disabled>Secondary Disabled</SecondaryButton>
       </div>
       <GlobalStyle />
