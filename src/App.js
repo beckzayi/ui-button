@@ -6,12 +6,12 @@ const App = () => {
   return (
     <div className="App">
       <div>
-        <PrimaryButton>Primary Button</PrimaryButton>
-        <SecondaryButton modifiers="small">Secondary</SecondaryButton>
+        <PrimaryButton modifiers={["large", "warning"]}>Primary Button</PrimaryButton>
+        <SecondaryButton modifiers={["small", "error", "secondaryButtonError"]}>Secondary</SecondaryButton>
         <TertiaryButton>Tertiary</TertiaryButton>
       </div>
       <div>
-        <PrimaryButton modifiers={["large"]} disabled>Primary Disabled</PrimaryButton>
+        <PrimaryButton disabled modifiers={["large", "success"]}>Primary Disabled</PrimaryButton>
         <SecondaryButton disabled>Secondary Disabled</SecondaryButton>
       </div>
       <GlobalStyle />
